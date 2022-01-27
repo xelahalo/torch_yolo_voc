@@ -10,7 +10,7 @@ by Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi
 
 The idea is that the YOLO predicts multiple bounding boxes per grid cell (in our case 2).
 
-During training we only want box predictor to be responsible for each object, we decide the
+During training we only want box predictor to be responsible for each object, we decide that
 by taking the highest current IOU (intersection over union) with the ground truth (the given box).
 We can achieve this via an identity function (Iobj_ij).
 
